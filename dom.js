@@ -24,8 +24,8 @@
 //console.log(document.getElementById('header-title'))
 
 //2nd method;
-var headerTitle = document.getElementById('header-title');
-var header = document.getElementById('main-header');
+// var headerTitle = document.getElementById('header-title');
+// var header = document.getElementById('main-header');
 //console.log(headerTitle);
 //headerTitle.textContent = 'Hello';
 //headerTitle.innerText = 'Goodbye';
@@ -35,13 +35,30 @@ var header = document.getElementById('main-header');
 
 //////----implement css ---////
 //headerTitle.style.borderBottom = 'solid 3px #000'
-header.style.borderBottom = 'solid 3px #000'
+// header.style.borderBottom = 'solid 3px #000'
 
-///-- GETELEMENTBYCLASSNAME ---///
+// ///-- GETELEMENTBYCLASSNAME ---///
 var items = document.getElementsByClassName('list-group-item');
-console.log(items);
-console.log(items[0]);
-//add item 
-items[1].textContent = 'Hello 2';
-items[1].style.fontWeight = 'bold';
-items[1].style.color = 'green';
+ console.log(items);
+ console.log(items[0]);
+// //add item 
+// items[1].textContent = 'Hello 2';
+// items[1].style.fontWeight = 'bold';
+// items[1].style.color = 'green';
+
+
+// / for(var i=0; i<items.length; i++){
+//     //     items[i].style.backgroundColor= 'yellow';
+//     // }
+    
+    
+    
+    
+    //maake 3rd element in the list have green background color
+    items[2].style.backgroundColor = 'green';
+    
+    //make all the elements in the list have bold color font
+    for(var i=0; i<items.length; i++){
+        items[i].style.fontWeight = 'bold';
+    }
+    

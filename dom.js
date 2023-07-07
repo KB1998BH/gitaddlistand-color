@@ -54,11 +54,29 @@ var items = document.getElementsByClassName('list-group-item');
     
     
     
-    //maake 3rd element in the list have green background color
-    items[2].style.backgroundColor = 'green';
+    // //maake 3rd element in the list have green background color
+    // items[2].style.backgroundColor = 'green';
     
-    //make all the elements in the list have bold color font
-    for(var i=0; i<items.length; i++){
-        items[i].style.fontWeight = 'bold';
-    }
-    
+    // //make all the elements in the list have bold color font
+    // for(var i=0; i<items.length; i++){
+    //     items[i].style.fontWeight = 'bold';
+   // }
+   
+      var items = document.getElementsByClassName("list-group-item-add");
+
+console.log(items);
+console.log(items[0]);
+//add item 
+items.textcontent = 'Hello 2';
+items.style.fontWeight = 'bold';
+items[1].style.color = 'green';
+
+
+var items = document.getElementsByTagName("li");
+
+console.log(items);
+console.log(items[0]);
+//add item 
+items.textcontent = 'Hello 2';
+items.style.fontWeight = 'bold';
+items[1].style.color = 'green';

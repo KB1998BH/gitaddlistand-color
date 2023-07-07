@@ -38,9 +38,9 @@
 // header.style.borderBottom = 'solid 3px #000'
 
 // ///-- GETELEMENTBYCLASSNAME ---///
-var items = document.getElementsByClassName('list-group-item');
- console.log(items);
- console.log(items[0]);
+// var items = document.getElementsByClassName('list-group-item');
+//  console.log(items);
+//  console.log(items[0]);
 // //add item 
 // items[1].textContent = 'Hello 2';
 // items[1].style.fontWeight = 'bold';
@@ -62,21 +62,35 @@ var items = document.getElementsByClassName('list-group-item');
     //     items[i].style.fontWeight = 'bold';
    // }
    
-      var items = document.getElementsByClassName("list-group-item-add");
+//       var items = document.getElementsByClassName("list-group-item-add");
 
-console.log(items);
-console.log(items[0]);
-//add item 
-items.textcontent = 'Hello 2';
-items.style.fontWeight = 'bold';
-items[1].style.color = 'green';
+// console.log(items);
+// console.log(items[0]);
+// //add item 
+// items.textcontent = 'Hello 2';
+// items.style.fontWeight = 'bold';
+// items[1].style.color = 'green';
 
 
-var items = document.getElementsByTagName("li");
+// var items = document.getElementsByTagName("li");
 
-console.log(items);
-console.log(items[0]);
-//add item 
-items.textcontent = 'Hello 2';
-items.style.fontWeight = 'bold';
-items[1].style.color = 'green';
+// console.log(items);
+// console.log(items[0]);
+// //add item 
+// items.textcontent = 'Hello 2';
+// items.style.fontWeight = 'bold';
+// items[1].style.color = 'green';
+
+
+
+
+
+
+
+//Make the 2nd item have green background color
+var seconditem = document.querySelector('.list-group-item:nth-child(2)');
+seconditem.style.backgroundColor = 'green';
+
+//Make the 3rd item invisible
+var lastitem =  document.querySelector('.list-group-item:nth-child(3)');
+lastitem.style.color = 'rgba(0,0,0,0)';

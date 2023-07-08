@@ -87,10 +87,36 @@
 
 
 
-//Make the 2nd item have green background color
-var seconditem = document.querySelector('.list-group-item:nth-child(2)');
-seconditem.style.backgroundColor = 'green';
+// //Make the 2nd item have green background color
+// var seconditem = document.querySelector('.list-group-item:nth-child(2)');
+// seconditem.style.backgroundColor = 'green';
 
-//Make the 3rd item invisible
-var lastitem =  document.querySelector('.list-group-item:nth-child(3)');
-lastitem.style.color = 'rgba(0,0,0,0)';
+// //Make the 3rd item invisible
+// var lastitem =  document.querySelector('.list-group-item:nth-child(3)');
+// lastitem.style.color = 'rgba(0,0,0,0)';
+
+
+
+
+////////////////----Now go head and add HEllo word before Item Lister-------/////////
+// Select the first header element inside the container element 
+const firstListItem = document.querySelector("header .container");
+
+// Create a new text node with the text "Hello World"
+const helloWorldText = document.createTextNode("Hello World");
+
+// Insert the new text node before the selected item-lister
+firstListItem.parentNode.insertBefore(helloWorldText, firstListItem);
+
+
+////////----Now go head and add HEllo word before Item 1-----//////////
+
+// Select the first <li> element inside the <ul> element with the ID "myList"
+const firstListItem2= document.querySelector("ul#items li:first-child");
+
+// Create a new text node with the text "Hello World"
+const helloWorldText2 = document.createTextNode("Hello World");
+
+// Insert the new text node before the selected <li> element
+firstListItem.parentNode.insertBefore(helloWorldText2, firstListItem2);
+

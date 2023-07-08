@@ -47,15 +47,16 @@
     <h2 class="title">Add Items</h2>
     <form id="addForm" class="form-inline mb-3">
       <input type="text" class="form-control mr-2" id="item">
+      <input type="text" class="form-control mr-2" id="description">
       <input type="submit" class="btn btn-dark" value="Submit">
     </form>
     <h2 class="title">Items</h2>
     <ul id="items" class="list-group">
         <!-- Now add an edit button next to the delete icon.[Dont have to build the Edit  functionality, just add the button] -->
-      <li class="list-group-item">Item 1 <button class="btn btn-danger btn-sm float-right delete">X</button> <button class="edit-btn">Edit</button></li>
-      <li class="list-group-item">Item 2 <button class="btn btn-danger btn-sm float-right delete">X</button><button class="edit-btn">Edit</button></li>
-      <li class="list-group-item">Item 3 <button class="btn btn-danger btn-sm float-right delete">X</button><button class="edit-btn">Edit</button></li>
-      <li class="list-group-item">Item 4 <button class="btn btn-danger btn-sm float-right delete">X</button><button class="edit-btn">Edit</button></li>
+        <li class="list-group-item" style="display: block;">Item 1 Iphone<button class="btn btn-danger btn-sm float-right delete">X</button><button class="btn btn-sm float-right editBtn">EDIT</button></li>
+        <li class="list-group-item" style="display: block;">Item 2 hyundai car<button class="btn btn-danger btn-sm float-right delete">X</button><button class="btn btn-sm float-right editBtn">EDIT</button></li>
+        <li class="list-group-item" style="display: block;">Item 3 oneplus<button class="btn btn-danger btn-sm float-right delete">X</button><button class="btn btn-sm float-right editBtn">EDIT</button></li>
+        <li class="list-group-item" style="display: block;">Item 4  Dell Laptop <button class="btn btn-danger btn-sm float-right delete">X</button> <button class="btn btn-sm float-right editBtn">EDIT</button></li>
     </ul>
     
 <script src="dom.js"></script>

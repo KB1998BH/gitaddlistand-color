@@ -99,24 +99,38 @@
 
 
 ////////////////----Now go head and add HEllo word before Item Lister-------/////////
-// Select the first header element inside the container element 
-const firstListItem = document.querySelector("header .container");
+// // Select the first header element inside the container element 
+// const firstListItem = document.querySelector("header .container");
 
-// Create a new text node with the text "Hello World"
-const helloWorldText = document.createTextNode("Hello World");
+// // Create a new text node with the text "Hello World"
+// const helloWorldText = document.createTextNode("HEllo");
 
-// Insert the new text node before the selected item-lister
-firstListItem.parentNode.insertBefore(helloWorldText, firstListItem);
+// // Insert the new text node before the selected item-lister
+// firstListItem.parentNode.insertBefore(helloWorldText, firstListItem);
 
 
-////////----Now go head and add HEllo word before Item 1-----//////////
+// ////////----Now go head and add HEllo word before Item 1-----//////////
 
-// Select the first <li> element inside the <ul> element with the ID "myList"
-const firstListItem2= document.querySelector("ul#items li:first-child");
+// // Select the first <li> element inside the <ul> element with the ID "myList"
+// const firstListItem2= document.querySelector("ul#items li:first-child");
 
-// Create a new text node with the text "Hello World"
-const helloWorldText2 = document.createTextNode("Hello World");
+// // Create a new text node with the text "Hello World"
+// const helloWorldText2 = document.createTextNode("HEllo");
 
-// Insert the new text node before the selected <li> element
-firstListItem.parentNode.insertBefore(helloWorldText2, firstListItem2);
+// // Insert the new text node before the selected <li> element
+// firstListItem.parentNode.insertBefore(helloWorldText2, firstListItem2);
 
+
+//On clicking the delete button we should be able to remove the newly created li tag
+//function removeitem 
+//delete event 
+itemList.addEventListener('click', removeItem);
+function removeItem(e){
+    if(e.target.classList.contains('delete')){
+        if(confirm('Are you sure?')){
+            var li = e.target.parentElement;
+            itemList.removeChild(li);
+      
+        }
+    }
+}
